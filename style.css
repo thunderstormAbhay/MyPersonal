@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+}
+
+h1 {
+    margin: 20px 0;
+    color: #fff; /* White color for the heading */
+}
+
+.controls {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.color-palette {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff; /* White border for color palette */
+    padding: 10px;
+    border-radius: 50%; /* Circular pattern */
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff; /* White border for color options */
+    border-radius: 50%; /* Make buttons circular */
+    cursor: pointer;
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.color-option:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+canvas {
+    border: 5px solid transparent;
+    border-image: linear-gradient(45deg, #f06, transparent);
+    border-image-slice: 1;
+    cursor: crosshair;
+    background-color: #fff;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 80vw; /* Set canvas width to 80% of the viewport width */
+    height: 60vh; /* Set canvas height to 60% of the viewport height */
+}
+
+.shape-tools button {
+    background: #fff;
+    border: 2px solid #1f1c2c;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.shape-tools button:hover {
+    background: #928dab;
+    transform: scale(1.1);
+    color: #fff;
+}
